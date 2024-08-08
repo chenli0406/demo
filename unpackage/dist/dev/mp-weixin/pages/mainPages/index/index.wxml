@@ -1,0 +1,1 @@
+<view class="content"><view class="text-area"><text class="title">{{a}}</text></view><uv-button wx:if="{{c}}" bindclick="{{b}}" u-i="5eca6294-0" bind:__l="__l" u-p="{{c}}"></uv-button><uv-skeletons wx:if="{{d}}" u-i="5eca6294-1" bind:__l="__l" u-p="{{d}}"></uv-skeletons></view>

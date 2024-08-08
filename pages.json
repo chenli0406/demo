@@ -1,0 +1,96 @@
+{
+	"pages": [
+		{
+			"path": "pages/mainPages/index/index",
+			"style": {
+				"navigationBarTitleText": "首页",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/mainPages/map/map",
+			"style": {
+				"navigationBarTitleText": "地图找房",
+				"disableScroll": true,
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/mainPages/serve/serve",
+			"style": {
+				"navigationBarTitleText": "服务",
+				"disableScroll": true
+			}
+		},
+		{
+			"path": "pages/mainPages/my/my",
+			"style": {
+				"navigationBarTitleText": "我的",
+				"disableScroll": true,
+				"navigationStyle": "custom"
+			}
+		}
+	],
+	// 分包
+	"subPackages":[
+		{
+			"root": "pages/userPages",
+			"pages": [
+				{
+					"path": "userInfo/userInfo",
+					"style": {
+						"navigationBarTitleText": "个人中心",
+						"enablePullDownRefresh": false
+					}
+				
+				}
+			]
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "",
+		"navigationBarBackgroundColor": "#FFFFFF",
+		"backgroundColor": "#FFFFFF",
+		"fontSize": "20"
+	},
+	"easycom": {
+	  "autoscan": true,
+	  "custom": {
+	    "^uni-(.*)": "@/components/custom-$1.vue", // 匹配components目录内的vue文件
+	    "^vue-file-(.*)": "packageName/path/to/vue-file-$1.vue" // 匹配node_modules内的vue文件
+	  }
+	},
+	"tabBar": {
+		"color": "#949699",
+		"selectedColor": "#248BF2",
+		"borderStyle": "white",
+		"backgroundColor": "#FFFFFF",
+		"list": [{
+				"pagePath": "pages/mainPages/index/index",
+				"iconPath": "./static/icon/home.png",
+				"selectedIconPath": "./static/icon/home-active.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/mainPages/map/map",
+				"iconPath": "./static/icon/map.png",
+				"selectedIconPath": "./static/icon/map-active.png",
+				"text": "地图找房"
+			},
+			{
+				"pagePath": "pages/mainPages/serve/serve",
+				"iconPath": "./static/icon/service.png",
+				"selectedIconPath": "./static/icon/service_active.png",
+				"text": "服务"
+			},
+			{
+				"pagePath": "pages/mainPages/my/my",
+				"iconPath": "./static/icon/me.png",
+				"selectedIconPath": "./static/icon/me-active.png",
+				"text": "我的"
+			}
+		]
+	},
+	"uniIdRouter": {}
+}

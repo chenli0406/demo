@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "个人中心",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "uv-tabs": "../../../uni_modules/uv-tabs/components/uv-tabs/uv-tabs",
+    "z-paging": "../../../uni_modules/z-paging/components/z-paging/z-paging"
+  }
+}

@@ -1,0 +1,24 @@
+
+.item {
+		position: relative;
+		height: 150rpx;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 0rpx 30rpx;
+}
+.item-detail {
+		padding: 5rpx 15rpx;
+		border-radius: 10rpx;
+		font-size: 28rpx;
+		color: white;
+		background-color: #007AFF;
+}
+.item-line {
+		position: absolute;
+		bottom: 0rpx;
+		left: 0rpx;
+		height: 1px;
+		width: 100%;
+		background-color: #eeeeee;
+}
